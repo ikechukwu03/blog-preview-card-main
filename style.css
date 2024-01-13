@@ -21,7 +21,6 @@ body{
   outline: 0;
   width: 380px;
   height: 550px;
-  cursor: pointer;
   background-color: white;
   border-radius: 10px;
   flex-direction: column;
@@ -33,7 +32,7 @@ body{
   border-radius: 10px;
   display: flex;
   justify-content: center;
-   margin: 20px 0 0 20px;
+  margin: 20px 0 0 20px;
 }
 
 p{
@@ -55,6 +54,7 @@ p{
   font-weight: 800;
   font-size: 30px;
   padding: 15px 0 0 20px;
+  cursor: pointer;
 }
 
 .html:hover{
@@ -64,6 +64,8 @@ p{
 .word{
   font-size: 16px;
   padding: 20px 0 0 20px;
+  line-height: 20px;
+  width: 70%;
 }
 
 .image{
@@ -90,6 +92,9 @@ footer{
    color: aqua;
  }
 
+  /* CSS works from top to bottom so once the width is more than 768px, it wont obey the media query. 
+ it will instead ignore it and obey every other thing before it. */
+ 
  @media all and (max-width: 768px){
   .container{
     width: 100%;
@@ -101,7 +106,6 @@ footer{
     outline: 0;
     width: 250px;
     height: 550px;
-    cursor: pointer;
     background-color: white;
     border-radius: 10px;
     flex-direction: column;
@@ -133,6 +137,7 @@ footer{
     font-weight: 800;
     font-size: 20px;
     padding: 9px 0 0 12px;
+    cursor: pointer;
   }
   
   .html:hover{
@@ -141,6 +146,8 @@ footer{
    .word{
     font-size: 14px;
     padding: 11px 0 0 12px;
+    line-height: 20px;
+    width: 100%;
   }
   .image{
     padding: 11px 0 0 11px;
